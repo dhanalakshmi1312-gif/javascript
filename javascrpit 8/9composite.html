@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Enter a number:"));
+let j = 0;
+
+if (a<= 1) {
+   document.write("Not a Composite Number");
+} else {
+    for (let i = 2; i < a; i++) {
+        if (a % i === 0) {
+            j = 1;
+            break;
+        }
+    }
+
+    if (j=== 1)
+       document.write("Composite Number");
+    else
+       document.write("Not a Composite Number");
+}
+
+    </script>
+</body>
+</html>
