@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+let a = [100, 250, 300]; 
+document.write("Cart Items Cost: " +a + "<br>");
+a.push(150);
+document.write("ADDED ITEMCOST: "+a+"<br>")
+let c=a.pop();
+document.write("REMOVE : "+c+"<br>")
+let total = 0;
+for (let i = 0; i < a.length; i++) {
+    total += a[i];
+}
+
+document.write("Total Cost RS: " + total);
+</script>
+
+</body>
+</html>

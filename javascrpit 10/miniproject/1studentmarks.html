@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+let a = [78, 85, 90, 66, 88];
+let total = 0;
+
+for (let i = 0; i <a.length; i++) {
+    total += a[i];
+}
+
+let average = total / a.length;
+let top = Math.max(...a);
+
+document.write("Marks: " + a + "<br>");
+document.write("Total: " + total + "<br>");
+document.write("Average: " + average + "<br>");
+document.write("Top Scorer: " + top);
+</script>
+
+</body>
+</html>
