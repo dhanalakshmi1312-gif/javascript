@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button class="first">click me</button>
+<button class="first">click me</button>
+<button class="first">click me</button>
+<button onclick ="demo()">change</button>
+
+<script>
+    function demo(){
+    let buttons = document.getElementsByClassName("first");
+    
+    for (let i = 0; i < buttons.length; i++) {
+        buttons[i].innerHTML = "clicked";
+    }
+}
+</script>
+
+</body>
+</html>

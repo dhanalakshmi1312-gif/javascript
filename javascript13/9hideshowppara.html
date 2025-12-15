@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="message">its a suprise!!...</p>
+<button id="toggleBtn" onclick="toggleText()">Hide/Show</button>
+
+<script>
+function toggleText() {
+    let msg = document.getElementById("message");
+
+    if (msg.style.display === "none") {
+        msg.style.display = "block";  
+    } else {
+        msg.style.display = "none";    
+    }
+}
+</script>
+
+</body>
+</html>
