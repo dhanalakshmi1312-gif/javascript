@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var income=parseInt(prompt("enter your income : "))
+         document.write("your income : "+income+"<br>")
+          
+        if(income<=150){
+           
+            document.write("there is no tax"+income+"<br>")
+        }
+        
+        else if(income>=150001 && income<=300000){
+             var a=0.10*income
+            document.write("the total amt rs: "+a+"<br>")
+        }
+        else if(income>=300001 && income<=500000){
+             var a=0.20*income
+            document.write("the total amt rs: "+a+"<br>")
+        }
+        else {
+             var a=0.30*income
+            document.write("the total amt rs: "+a+"<br>")
+        }
+        
+       
+    </script>
+</body>
+</html>

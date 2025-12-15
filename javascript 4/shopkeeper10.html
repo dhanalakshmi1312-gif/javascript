@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cost=parseInt(prompt("enter the cost for discount"))
+        var kg=parseInt(prompt("enter the kg for discount"))
+       
+        
+        var total = cost * kg;
+    var discount = total * 0.10;
+        if(total>1000){
+            var finalamount=total - discount
+            document.write("the final amount need to be pay after reduction: "+ finalamount)
+        }
+        else{
+            document.write("you are not eligible"+total)
+        }
+
+     
+
+
+    </script>
+</body>
+</html>

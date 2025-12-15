@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name=prompt("enter your name")
+        document.write("name: "+name+"<br>")
+        var a=prompt("enter your gender:  ")
+        var salary=Number(prompt("enter your salary: "))
+        if (a=="male"){
+           const b=salary*0.05;
+            document.write("the incremented salary: "+b)
+        }
+        else if(a=="female"){
+           const c=salary*0.10;
+            document.write("the incremented salary: "+c)
+
+        }
+        else{
+            document.write("its invalid")
+        }
+    </script>
+</body>
+</html>

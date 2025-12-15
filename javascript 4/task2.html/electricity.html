@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name=prompt("the name of the user")
+        var unit=parseInt(prompt("enter the unit: "))
+         document.write("the user name: "+name+"<br>")
+          document.write("the unit: "+unit+"<br>")
+        if(unit<=200){
+            var a=0.08*unit+100
+            document.write("the total amt: "+a+"<br>")
+        }
+        
+        else if(unit>=200 && unit<=300){
+             var a=0.09*unit+100
+            document.write("the total amt: "+a+"<br>")
+        }
+        
+        else {
+             var a=1*unit+100
+            document.write("the total amt: "+a+"<br>")
+        }
+
+
+        document.write("additional charge:"+"<br>")
+        if (a>400){
+            var d=0.15+a
+            document.write("the finalcharge:  "+d+"<br>")
+        }
+        
+        else{
+            document.write("no additional charge")
+        }
+        
+         
+       
+
+        
+    </script>
+</body>
+</html>

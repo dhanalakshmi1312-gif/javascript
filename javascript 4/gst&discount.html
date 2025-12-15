@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("gst"+"<br>")
+        var price=parseInt(prompt("enter the price for gst"))
+        var quantity=parseInt(prompt("enter the quantity for gst"))
+        const gst=12/100
+        var total =price*quantity;
+      let gst_amt = total * gst;           
+let  finalAmount = total + gst_amt; 
+document.write("the total: "+total+"<br>")
+document.write("the gst: "+gst+"<br>")
+document.write("the final amount need to be pay: "+finalAmount+"<br>") 
+/*DISCOUNT*/
+document.write("DISCOUNT"+"<br>")
+  var cost=parseInt(prompt("enter the cost for discount"))
+        var kg=parseInt(prompt("enter the kg for discount"))
+        const discount=5/100
+        var overall =cost*kg;
+      let c = overall * discount;           
+let  reducted = overall - c;
+document.write("the overall: "+overall+"<br>")
+document.write("the discount: "+discount+"<br>")
+document.write("the final amount need to be pay after reduction: "+reducted+"<br>")
+
+    </script>
+</body>
+</html>

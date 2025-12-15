@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=parseInt(prompt("enter the tamil mark: "))
+        var b=parseInt(prompt("enter the english mark: "))
+        var c=parseInt(prompt("enter the science mark: "))
+        var d=parseInt(prompt("enter the social mark: "))
+        var e=parseInt(prompt("enter the maths mark: "))
+        document.write("the tamil mark: "+a+"<br>")
+        document.write("the english mark: "+b+"<br>")
+        document.write("the science mark: "+c+"<br>")
+        document.write("the social mark: "+d+"<br>")
+        document.write("the maths mark: "+e+"<br>")
+
+
+
+
+
+        let total=a+b+c+d+e;
+      if(total>=450 && total<=500){
+        document.write("grade A")
+      }
+      else if(total>=400 && total<=450){
+        document.write("grade B")
+      }
+      else if(total>=350 && total<=400){
+        document.write("grade C")
+      }
+      else if(total>=300 && total<=350){
+        document.write("grade D")
+      }
+      else if(total>=250 && total<=300){
+        document.write("grade E")
+      }
+      else {
+        document.write("YOU ARE FAIL")
+      }
+    </script>
+</body>
+</html>
