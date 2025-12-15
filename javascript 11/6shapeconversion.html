@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.shape {
+  width: 200px;
+  height: 100px;   
+  background: green;
+  transition: 0.3s;
+ margin-left: 700px;
+}
+</style>
+</head>
+<body>
+
+
+
+<script>
+function Circle(x) {
+  x.style.width = "120px";
+  x.style.height = "120px";
+  x.style.borderRadius = "50%";
+}
+
+function Square(x) {
+  x.style.width = "120px";
+  x.style.height = "120px";
+  x.style.borderRadius = "0";
+}
+</script>
+<div class="shape"
+     onmouseover="Circle(this)"
+     onmouseout="Square(this)">
+</div>
+
+</body>
+</html>
+
+

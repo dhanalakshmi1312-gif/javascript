@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Blog</title>
+    <style>
+        .blog {
+            width: 200px;
+            margin: auto;
+             display: flex;
+             gap: 10px;
+           
+            
+        }
+
+        .blog img {
+            width: 100%;
+            transition: transform 0.3s ease;
+            margin-left: -10px; 
+            
+            
+
+            
+        }
+        .div p{
+            margin-top: 550px;
+        }
+    </style>
+</head>
+<body>
+    <center> <h1>BTS</h1></center>
+    <div class="blog">
+       
+        
+        <img src=../images/jin.webp 
+             alt="BTS" 
+             onmouseover="zoomImage(this)" 
+             onmouseout="normalImage(this)">
+        <br><br> <p>Jin is also called WWH Boy</p>
+       <img src=images/rm.webp
+             alt="BTS" 
+             onmouseover="zoomImage(this)" 
+             onmouseout="normalImage(this)">
+              <br><br> <p>Rm is the leader for this group</p>
+       
+       <img src=images/jimin.webp
+             alt="BTS" 
+             onmouseover="zoomImage(this)" 
+             onmouseout="normalImage(this)">
+              <br><br> <p>jimin is a member in this group</p>
+              </div>
+       
+             
+       
+    </div>
+
+    <script>
+        function zoomImage(img) {
+            img.style.transform = "scale(1.2)"; // zoom 20%
+        }
+
+        function normalImage(img) {
+            img.style.transform = "scale(1)"; // back to normal
+        }
+    </script>
+</body>
+</html>

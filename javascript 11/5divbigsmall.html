@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:500px;
+            width: 300px;
+            background-color: yellow;
+            transition: height 3s,width 2s,background-color3s;
+            align-items: center;
+            margin-left: 700px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+       
+        function large(a){
+            a.style.height="500px"
+            a.style.width="500px"
+            a.style.background="purple"
+        }
+        function small(a){
+            a.style.height="200px"
+            a.style.width="200px"
+            a.style.background="pink"
+        }
+       
+    </script>
+  
+</body>
+<div onmouseover="large(this)"  onmouseout="small(this)"></div>
+</body>
+</html>
