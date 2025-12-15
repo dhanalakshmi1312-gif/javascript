@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+    var aptitude = Number(prompt("Enter Aptitude Marks:"));
+    var gd = Number(prompt("Enter GD Marks:"));
+    var technical = Number(prompt("Enter Technical Marks:"));
+    var hr = Number(prompt("Enter HR Marks:"));
+
+    if (aptitude >= 85) {
+        if (gd >= 90) {
+            if (technical >= 80) {
+                if (hr >= 95) {
+                    document.write("You are Eligible for the Job!");
+                } else {
+                    document.write(" Not eligible (HR marks < 95)");
+                }
+            } else {
+                document.write(" Not eligible (Technical marks < 80)");
+            }
+        } else {
+            document.write(" Not eligible (GD marks < 90)");
+        }
+    } else {
+        document.write(" Not eligible (Aptitude marks < 85)");
+    }
+</script>
+
+        
+
+</body>
+</html>

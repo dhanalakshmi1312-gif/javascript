@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var username = prompt("Enter username:");
+
+    if (username.length >= 3) {
+        document.write("Username is valid<br>");
+
+        var email = prompt("Enter email:");
+
+        if (email.includes("@") && email.includes(".")) {
+            document.write("Email is valid");
+        } 
+        else {
+            document.write("Invalid Email ID");
+        }
+
+    } else {
+        document.write("Invalid Username (must be at least 3 characters)<br>");
+    }
+</script>
+
+
+
+</body>
+</html>
