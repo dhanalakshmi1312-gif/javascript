@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let e=[1,2,3]
+        let g=[4,5,6]
+        document.write("1st array: ",e+"<br>")
+             document.write("2nd array: ",g+"<br>")
+let f=[... e, ...g]
+document.write("the merge version using spread op: ",f+"<br>")
+let [a,b,c]=f
+document.write("destructure the first 3 values:",a,b,c)
+</script>
+</body>
+</html>

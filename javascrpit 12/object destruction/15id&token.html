@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+     const response={
+        status:200,
+        data:{
+            user:{id:1,name:"Arun"},
+            token:"abc123"
+        }
+     }
+     const{
+         data:{ 
+            user:{id},
+         token
+
+         }
+        }=response;
+        document.write("token: ",token+"<br>")
+         document.write("id: ",id)
+   </script>
+</body>
+</html>
