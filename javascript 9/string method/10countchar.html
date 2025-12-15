@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let a= prompt("enter any word");
+let result = "";
+
+for (let i = 0; i < a.length; i++) {
+  let count = 0;
+
+  for (let j = 0; j < a.length; j++) {
+    if (a[i] == a[j]) {
+      count++;
+    }
+  }
+
+  
+  if (!result.includes(a[i])) {
+    result += a[i] + " = " + count + "<br>";
+  }
+}
+
+document.write("10. Character Count:<br>" + result);
+</script>
+
+</body>
+</html>

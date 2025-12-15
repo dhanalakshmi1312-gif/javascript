@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let a = prompt("Enter a sentence:");
+let b = a.split(" ");   
+let result = "";
+
+for (let i = 0; i < b.length; i++) {
+  let c = b[i];
+  
+  let first = c.charAt(0).toUpperCase();
+  let rest = c.slice(1);
+  
+  result = result + first + rest + " ";
+}
+
+document.write(" Capitalized: " + result);
+</script>
+
+</body>
+</html>

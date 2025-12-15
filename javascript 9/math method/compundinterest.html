@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let principal = parseFloat(prompt("Enter Principal Amount"));
+        let rate = parseFloat(prompt("Enter Rate of Interest"));
+        let time = parseInt(prompt("Enter Time in years"));
+        let amount = principal * Math.pow((1 + rate / 100), time);
+        let CI = amount - principal;
+        document.write("Principal: " + principal + "<br>");
+        document.write("Rate: " + rate + "%<br>");
+        document.write("Time: " + time + " years<br><br>");
+        document.write("Compound Interest: " + CI.toFixed(2) + "<br>");
+        document.write("Total Amount: " + amount.toFixed(2));
+    </script>
+</body>
+</html>
